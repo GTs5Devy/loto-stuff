@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotto'</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav">
+        <a href="index.html" class="nav__link">
+          <i class="material-icons nav__icon">dashboard</i>
+          <span class="nav__text">Dashboard</span>
+        </a>
+        <a href="site.html" class="nav__link">
+          <i class="material-icons nav__icon">computer</i>
+          <span class="nav__text">Our Website</span>
+        </a>
+        <a href="#" class="nav__link">
+          <i class="material-icons nav__icon">code</i>
+          <span class="nav__text">About (Coming Soon!)</span>
+        </a>
+      </nav>
+
+    <main class="app">
+        <section class="greeting">
+            <h2 class="title">
+                Heya, <input type="text" id="name" placeholder="Name Here">
+            </h2>
+        </section>
+
+        <section class="create-todo">
+            <h3>CREATE A TASK</h3>
+            <form id="new-todo-form">
+                <h4>What's on your mind?</h4>
+                <input 
+                    type="text" 
+                    name="content" 
+                    id="content" 
+                    placeholder="e.g. drinking some orange juice.">
+                <h4>Pick a category</h4>
+                <div class="options">
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="category" 
+                            id="category1" 
+                            value="business">
+                        <span class="bubble business"></span>
+                        <div>Business / Studies
+                        </div>
+                    </label>
+
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="category" 
+                            id="category2" 
+                            value="personal">
+                        <span class="bubble personal"></span>
+                        <div>Personal</div>
+                    </label>
+                </div>
+
+                <input type="submit" value="Add task">
+            </form>
+        </section>
+
+        <section class="todo-list">
+            <h3>Task List</h3>
+            <div class="list" id="todo-list">
+                <!--<div class="todo-item done">
+                    <label>
+                        <input type="checkbox">
+                        <span class="bubble business"></span>
+                    </label>
+
+                    <div class="todo-content">
+                        <input type="text" value="Study Calculus ">
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+
+                <div class="todo-item">
+                    <label>
+                        <input type="checkbox">
+                        <span class="bubble personal"></span>
+                    </label>
+
+                    <div class="todo-content">
+                        <input type="text" value="Get Milk">
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div> -->
+            </div> 
+        </section>
+        
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
